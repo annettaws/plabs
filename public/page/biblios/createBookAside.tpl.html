@@ -1,0 +1,53 @@
+
+<div class="aside " tabindex="-1" role="dialog" >
+     <div class="aside-dialog">
+    <div class="aside-content" >
+      <div class="aside-header" >
+        <button type="button" class="close" ng-click="$hide()">&times;</button>
+        <h4 class="aside-title" > Crea Libro </h4>
+      </div>
+        <div class="aside-body" >
+            
+            <form   name="myTodo"  id="salva" ng-submit="salvaNuovoBook(Book)" novalidate>
+               
+                
+                
+                <div class="form-group" ng-class="{ 'has-error' : myTodo.todotxt1.$invalid && !myTodo.todotxt1.$pristine }">
+                  <label for="text">Title:</label>
+                  <input type="text" 
+                            class="form-control" 
+                            ng-model="Book.title"
+                            id="text"
+                            required
+                            name="todotxt1"
+                           >
+                 
+                      <p ng-show="myTodo.todotxt1.$invalid && !myTodo.todotxt1.$pristine" class="help-block">Testo:is required.</p>
+                  <br>
+                    </div>
+
+                   <div class="row">
+
+                 <label for="aut">Autore:</label>
+                  <button class="btn btn-primary  pull-right btnPanelHead" ng-click="createAutore(); createBookHiden() ">
+                        <span class="glyphicon glyphicon-plus " aria-hidden="true"></span>
+                    </button>
+</div>
+                <div><button id="aut"type="button" class="btn btn-default" ng-model="Book.autore" data-html="1" data-toggle="true" bs-options="autore.firstname + ' ' + autore.lastname for autore in autori" bs-select >
+                 Action <span class="caret"></span>
+                </button></div>
+                
+            </form>
+            
+                      </div>
+        <hr>
+      
+
+      <div class="aside-footer">
+               <button type="submit" class="btn btn-success pull-left" form="salva" > salva</button>
+          <button type="button"  class="btn btn-default" ng-click="$hide()">annulla</button>
+   
+      </div>
+    </div>
+  </div>
+</div>

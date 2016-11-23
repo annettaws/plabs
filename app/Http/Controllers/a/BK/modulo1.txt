@@ -1,0 +1,82 @@
+<?php
+
+namespace App\geoClass;
+
+use App\geoClass\GestioneFile as G;
+use App\geoClass\Costanti as C;
+use App\geoClass\GenTabelleDb as database;
+class GenControllerPhp {
+
+
+
+//const  pControllerPhp="../app/Http/Controllers";//percorso controlleres php
+
+
+
+    
+<?php
+        public static function creaStruttura($obj) {
+       $nomeSezione=$obj["nomeTabella"];
+           $text='<?php
+            namespace ' . C::pNameSpace() .'\\' . $nomeSezione .';
+            use App\Http\Controllers\Controller;
+            use Illuminate\Database\Schema\Blueprint;
+            use Illuminate\Support\Facades\Schema;
+            use Illuminate\Support\Facades\DB;
+            use App\model\gen\\'. $nomeSezione . '\\' .$nomeSezione . ';
+
+            use '. C::pNameSpaceModel() . '\\' . $nomeSezione . '\\' .$nomeSezione  . ' as O;
+
+
+            class ' . $nomeSezione . 'Controller extends Controller {
+                public function getIndex() {
+                    return view(\'gen.'.$nomeSezione.'.'.$nomeSezione.'\');
+                    }
+
+
+
+
+                public function getLista() {
+            return DB::table(\'' . $nomeSezione . '\')->orderBy(\'id\', \'desc\')->get();
+                    }
+
+
+         public function getSalva($obj) {
+                $data  = json_decode($obj,true);
+                $r = new ' . $nomeSezione . ';';
+
+
+  for ($i=0;$i<count($obj["campiTabella"]); $i++){
+                $c=$obj["campiTabella"];
+               $text = $text . '
+            $r->'. $c[$i]["nome"] .' = $data[\' ' . $c[$i]["nome"] . '\'];'
+
+          
+            };
+
+$text = $text . ' $r->save();
+            return  $data['nome'];
+                    }';
+
+
+
+
+     $text = $text . '        
+                public function getCreadb() {
+
+                   '.  database::creaStruttura($obj)  .'
+
+                  
+                    }
+
+              
+
+            }';
+                    
+
+         G::scriviSuFile(C::pControllerPhp().'/'.$nomeSezione.'/'.$nomeSezione.'Controller.php', $text);
+
+        return  $text ;
+    }
+
+}

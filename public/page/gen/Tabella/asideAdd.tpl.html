@@ -1,0 +1,35 @@
+
+           <div class='aside ' tabindex='-1' role='dialog' >
+     <div class='aside-dialog'>
+    <div class='aside-content' >
+      <div class='aside-header' >
+        <button type='button' class='close' ng-click='$hide()'>&times;</button>
+        <h4 class='aside-title' > Novo Tabella </h4>
+      </div>
+        <div class='aside-body' >
+           <label >ID</label>
+              <input type='text' 
+                class='form-control'
+                 ng-model='Tabella.ID'
+                  ></input>
+           <label >nome</label>
+              <input type='text' 
+                class='form-control'
+                 ng-model='Tabella.nome'
+                  ></input>
+           <label >idchiaesterna</label>
+              <input type='text' 
+                class='form-control'
+                 ng-model='Tabella.idchiaesterna'
+                  ></input> </div>
+      <div class='aside-footer'>
+          <button ng-show='creaOaggirna' class='btn btn-success pull-left' ng-click='salva(Tabella)' > salva</button>
+          <button ng-show='!creaOaggirna' class='btn btn-success pull-left' ng-click='aggiorna(Tabella)' > agiorna</button>
+          <button type='button'  class='btn btn-default' ng-click='$hide()'>annulla</button>
+             <hr>
+      <button ng-show='!creaOaggirna' class='btn btn-danger pull-left' ng-click='destroy(Tabella)' > Cancella</button>
+      </div>
+   
+    </div>
+  </div>
+</div>

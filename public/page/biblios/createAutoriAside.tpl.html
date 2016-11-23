@@ -1,0 +1,58 @@
+
+<div class="aside " tabindex="-1" role="dialog" >
+     <div class="aside-dialog">
+    <div class="aside-content" >
+      <div class="aside-header" >
+        <button type="button" class="close" ng-click="$hide()">&times;</button>
+        <h4 class="aside-title" > Crea Autore </h4>
+      </div>
+        <div class="aside-body" >
+            
+            <form   name="myTodo"  id="salva" ng-submit="salvaNuovoAutore(autore)" novalidate>
+               
+                
+                
+                <div class="form-group" ng-class="{ 'has-error' : myTodo.todotxt1.$invalid && !myTodo.todotxt1.$pristine }">
+                  <label for="text">First name:</label>
+                  <input type="text" 
+                            class="form-control" 
+                            ng-model="autore.firstname"
+                            id="text"
+                            required
+                            name="todotxt1"
+                           >
+                 
+                      <p ng-show="myTodo.todotxt1.$invalid && !myTodo.todotxt1.$pristine" class="help-block">Testo:is required.</p>
+                  <br>
+                    </div>
+
+                    <div class="form-group" ng-class="{ 'has-error' : myTodo.todotxt2.$invalid && !myTodo.todotxt2.$pristine }">
+                  <label for="text2">Last name:</label>
+                  <input type="text" 
+                            class="form-control" 
+                            ng-model="autore.lastname"
+                            id="text2"
+                            required
+                            name="todotxt2"
+                           >
+                 
+                      <p ng-show="myTodo.todotxt2.$invalid && !myTodo.todotxt2.$pristine" class="help-block">Testo:is required.</p>
+                  <br>
+                    </div>
+                
+        
+                
+            </form>
+            
+                      </div>
+        <hr>
+      
+
+      <div class="aside-footer">
+               <button type="submit" class="btn btn-success pull-left" form="salva" ng-disabled="myTodo.$invalid"> salva</button>
+          <button type="button"  class="btn btn-default" ng-click="$hide()">annulla</button>
+   
+      </div>
+    </div>
+  </div>
+</div>

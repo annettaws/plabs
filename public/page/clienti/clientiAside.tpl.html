@@ -1,0 +1,120 @@
+
+<div class="aside " tabindex="-1" role="dialog" >
+     <div class="aside-dialog">
+    <div class="aside-content" >
+      <div class="aside-header" >
+        <button type="button" class="close" ng-click="$hide()">&times;</button>
+        <h4 class="aside-title" > Clienti </h4>
+      </div>
+        <div class="aside-body" >
+      
+
+            <form   name="clientiForm"  id="salva" ng-submit="addNewCliente(cliente)" novalidate>
+               
+              
+
+ 
+                        <label for="text">Titolo:</label>
+
+                        <select class="form-control" ng-model="cliente.titolo"  name="nome" placeholder="Spett.le">
+                            <option>Spett.le</option>
+                            <option>Ing.</option>
+                            <option>Geol.</option>
+                            <option>Arch.</option>
+                            <option>Geom.</option>
+                            <option>Sig.</option>
+                            <option>Sig.ra</option>
+                        </select>
+
+                        <label for="nome">Nome:</label>
+                        <input type="text"
+                               class="form-control"
+                               ng-model="cliente.nome"
+                               id="text"
+                               required
+                               name="nome"
+                               ></input>
+                        <label for="cognome">Cognome:</label>
+                        <input type="text"
+                               class="form-control"
+                               ng-model="cliente.cognome"
+                               id="text"
+                               required
+                               name="cognome"
+                               ></input>
+
+                        <label for="email">email:</label>
+                        <input type="text"
+                               class="form-control"
+                               ng-model="cliente.email"
+                               id="email"
+                               required
+                               name="email"
+                               ></input>
+                        <label for="cell">cell:</label>
+                        <input type="text"
+                               class="form-control"
+                               ng-model="cliente.cell"
+                               id="fax"
+                               required
+                               name="cell"
+                               ></input>
+
+                        <label for="tel">tel:</label>
+                        <input type="text"
+                               class="form-control"
+                               ng-model="cliente.tel"
+                               id="fax"
+                               required
+                               name="tel"
+                               ></input>
+
+
+                        <label for="fax">fax:</label>
+                        <input type="text"
+                               class="form-control"
+                               ng-model="cliente.fax"
+                               id="fax"
+                               required
+                               name="fax"
+                               ></input>
+
+                        
+                        <label for="reg">user:</label>
+                      <div><button id="reg"type="button" class="btn btn-default" ng-model="cliente.user" data-html="1" data-toggle="true" bs-options="user.name + ',  ' + user.email for user in listaUtenti" 
+                      
+                      bs-select >
+                       Action <span class="caret"></span>
+                      </button></div>
+
+
+                     
+
+
+      
+                      <p ng-show="clientiForm.todotxt1.$invalid && !clientiForm.todotxt1.$pristine" class="help-block">Testo:is required.</p>
+                  <br>
+                    </div>
+
+                    
+
+                 
+            </form>
+            
+                      </div>
+  
+
+                    <hr>
+
+      <form ng-submit="cancellaBook(book)" id="cancella"></form>
+               
+
+      <div class="aside-footer">
+               <button type="submit" class="btn btn-success pull-left" form="salva" ng-disabled="clientiForm.$invalid"> salva</button>
+        <button type="submit"  class="btn btn-danger" form="cancella">cancella</button>
+ 
+           
+      </div>
+    </div>
+  </div>
+</div>

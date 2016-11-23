@@ -1,0 +1,115 @@
+
+<div class="aside " tabindex="-1" role="dialog" >
+     <div class="aside-dialog">
+    <div class="aside-content" >
+      <div class="aside-header" >
+        <button type="button" class="close" ng-click="$hide()">&times;</button>
+        <h4 class="aside-title" > Località </h4>
+      </div>
+        <div class="aside-body" >
+      
+
+            <form   name="myTodo"  id="salva" ng-submit="addNew(localita)" novalidate>
+               
+                
+      
+               <div class="form-group" ng-class="{ 'has-error' : myTodo.todotxt1.$invalid && !myTodo.todotxt1.$pristine }">
+                  <label for="text">Via:</label>
+                  <input type="text" 
+                            class="form-control" 
+                            ng-model="localita.via"
+                            id="text"
+                            required
+                            name="todotxt1"
+                           ></input>
+                  <label for="civico">Civico:</label>
+                  <input type="text" 
+                            class="form-control" 
+                            ng-model="localita.civico"
+                            id="civico"
+                            required
+                            name="civico1"
+                           ></input>
+
+                  <label for="note">note:</label>
+                  <input type="text" 
+                            class="form-control" 
+                            ng-model="localita.note"
+                            id="note"
+                            required
+                            name="note1"
+                           ></input>
+                   
+                    
+                    <label for="coordinataX">coordinataX:</label>
+                    <input type="text" 
+                            class="form-control" 
+                            ng-model="localita.coordinataX"
+                            id="coordinataX"
+                            required
+                            name="coordinataX1"
+                           ></input>
+                <label for="coordinataY">coordinataY:</label>
+                    <input type="text" 
+                            class="form-control" 
+                            ng-model="localita.coordinataY"
+                            id="coordinataY"
+                            required
+                            name="coordinataY1"
+                           ></input>
+
+
+                      <p ng-show="myTodo.todotxt1.$invalid && !myTodo.todotxt1.$pristine" class="help-block">Testo:is required.</p>
+                  <br>
+                    </div>
+
+                    
+
+                 <label for="reg">Regione:</label>
+                <div><button id="reg"type="button" class="btn btn-default" ng-model="localita.regioneSelezionata" data-html="1" data-toggle="true" bs-options="regione.nome + ',  ' + regione.siglaRegione for regione in regioni" 
+                 ng-change="listaprovice(localita.regioneSelezionata);"
+                bs-select >
+                 Action <span class="caret"></span>
+                </button></div>
+
+                  <label for="prov">Provicia:</label>
+                <div><button id="prov" type="button" class="btn  btn-default" ng-model="localita.provinciaSelezionata" data-html="1" data-toggle="true" bs-options="provincia.nome  for provincia in provincie"
+                 ng-change="listaComuni(localita.provinciaSelezionata);"
+                 bs-select >
+                 Action <span class="caret"></span>
+                </button></div>
+                
+                <label for="comm">Comune:</label>
+                <div><button id="comm" type="button" class="btn  btn-default" ng-model="localita.comuneSelezionata" data-html="0" data-toggle="true" bs-options="comune.nomeComune  for comune in comuni"
+                 
+                 bs-select >
+                 Action <span class="caret"></span>
+                </button></div>
+                  <label for="Cap">Cap:</label>
+                  <input type="text" 
+                            class="form-control" 
+                            ng-model="localita.comuneSelezionata.cap"
+                            id="Cap"
+                            required
+                            name="Cap"
+                           >
+</input> 
+            </form>
+            
+                      </div>
+  
+
+                    <hr>
+
+      <form ng-submit="cancellaBook(book)" id="cancella"></form>
+               
+
+      <div class="aside-footer">
+               <button type="submit" class="btn btn-success pull-left" form="salva" ng-disabled="myTodo.$invalid"> salva</button>
+        <button type="submit"  class="btn btn-danger" form="cancella">cancella</button>
+ 
+           
+      </div>
+    </div>
+  </div>
+</div>

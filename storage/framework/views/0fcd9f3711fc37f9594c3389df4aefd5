@@ -1,0 +1,30 @@
+
+ <li><a href="<?php echo e(url('/Campo')); ?>">Campo</a></li>
+ <li><a href="<?php echo e(url('/Tabella')); ?>">Tabella</a></li>
+<hr>
+
+
+ <li><a href="<?php echo e(url('/Test')); ?>">Test</a></li>
+ <li><a href="<?php echo e(url('/Test')); ?>">Test</a></li>
+ <li><a href="<?php echo e(url('/Test')); ?>">Test</a></li>
+ <li><a href="<?php echo e(url('/Test')); ?>">Test</a></li>
+ <li><a href="<?php echo e(url('/Test')); ?>">Test</a></li>
+ <li><a href="<?php echo e(url('/Test')); ?>">Test</a></li>
+ <li><a href="<?php echo e(url('/Test')); ?>">Test</a></li>
+ <li><a href="<?php echo e(url('/Test')); ?>">Test</a></li>
+ <li><a href="<?php echo e(url('/Test')); ?>">Test</a></li>
+ <li><a href="<?php echo e(url('/Test')); ?>">Test</a></li>
+ <li><a href="<?php echo e(url('/Test')); ?>">Test</a></li>
+ <li><a href="<?php echo e(url('/Test')); ?>">Test</a></li>
+ <li><a href="<?php echo e(url('/Test')); ?>">Test</a></li>
+ <li><a href="<?php echo e(url('/Rubrica')); ?>">Rubrica</a></li>
+ <li><a href="<?php echo e(url('/Rubrica')); ?>">Rubrica</a></li>
+ <li><a href="<?php echo e(url('/Anna')); ?>">Anna</a></li>
+ <li><a href="<?php echo e(url('/Anna')); ?>">Anna</a></li>
+ <li><a href="<?php echo e(url('/Anna')); ?>">Anna</a></li>
+ <li><a href="<?php echo e(url('/Anna')); ?>">Anna</a></li>
+ <li><a href="<?php echo e(url('/Anna')); ?>">Anna</a></li>
+ <li><a href="<?php echo e(url('/Rubrica')); ?>">Rubrica</a></li>
+ <li><a href="<?php echo e(url('/Clienti')); ?>">Clienti</a></li>
+ <li><a href="<?php echo e(url('/Gruppi')); ?>">Gruppi</a></li>
+ 

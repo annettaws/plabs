@@ -1,0 +1,58 @@
+<?php $__env->startSection('title','| Home'); ?>
+<?php $__env->startSection('content'); ?>
+<div class="container" style="margin-top:20px">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="panel panel-default">
+                <div class="panel-heading">Home</div>
+
+                <div class="panel-body">
+                    Sei Loggato <?php echo e(Auth::user()->name); ?> !<br>
+                    <?php echo e(Auth::user()->email); ?>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-4">
+                          <label for="amministrazione" >Amministrazione</label>
+                            <ul id='amministrazione'>
+                                <li><a href="<?php echo e(url('/todo')); ?>">Cose da fare</a></li>
+                                <li><a href="<?php echo e(url('/clienti')); ?>">Clienti</a></li>
+                                <li><a href="<?php echo e(url('/localita')); ?>">Comuni italiani</a></li>
+                                <li><a href="<?php echo e(url('/biblios/autoriPage')); ?>">Autori</a></li>
+                                <li><a href="<?php echo e(url('/listini')); ?>">Listini</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="laboratorio" >Laboratorio</label>
+                            <ul id="laboratorio">
+                                <li><a href="<?php echo e(url('/tests')); ?>">Test</a></li>
+                                <li><a href="<?php echo e(url('/clienti')); ?>">Clienti</a></li>
+                                <li><a href="<?php echo e(url('/localita')); ?>">Comuni italiani</a></li>
+                                <li><a href="<?php echo e(url('/laratweet')); ?>">laratweet</a></li>
+                                <li><a href="<?php echo e(url('/utenti')); ?>">utenti</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="ISO" >ISO 9001:2015</label>
+                            <ul id="ISO">
+                                <li><a href="<?php echo e(url('/iso/normative')); ?>">Normative</a></li>
+                                <li><a href="<?php echo e(url('/iso/pq')); ?>">Piani di qualita</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <input type="text" ng-model="test">
+            {{ test}}
+
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

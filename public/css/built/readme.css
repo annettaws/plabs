@@ -1,0 +1,5 @@
+<!- - css/ app.css
+bower_components/angular-motion/dist/angular-motion.min.css
+bower_components/angular-ui-grid/ui-grid.min.css
+bower_components/font-awesome/css/font-awesome.css
+<link href="{{ asset('bower_components/eeh-navigation/dist/eeh-navigation.css') }}" rel="stylesheet">

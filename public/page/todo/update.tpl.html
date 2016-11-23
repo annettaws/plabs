@@ -1,0 +1,35 @@
+
+<div class="modal" tabindex="-1" role="dialog" aria-hidden="false"  >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" >
+        <button type="button" class="close" aria-label="Close" ng-click="$hide()"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" >ciao</h4>
+          <form ng-submit="update(todo)">
+        <div class="modal-body" >
+                   <div class="panel-heading">update</div>
+          
+       
+                            <input type="text" ng-model="todo.text">
+                            
+
+                  
+                       
+            
+            <% todo  %>
+                      
+        </div>
+      <div class="modal-footer"> 
+        <button type="submit" class="btn btn-success pull-left" > salva</button>
+                               
+       
+      </div>
+                    </form>
+           <form ng-submit="delete(todo.id)">
+
+                                            <button type="submit" class="btn btn-danger">cancella</button>
+
+                                        </form>
+    </div>
+  </div>
+</div>

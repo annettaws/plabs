@@ -1,0 +1,111 @@
+SiglaRegione;nomeProvincia; siglaProvincia)
+ABR;Chieti;CH
+ABR;L'Aquila;AQ
+ABR;Pescara;PE
+ABR;Teramo;TE
+BAS;Matera;MT
+BAS;Potenza;PZ
+CAL;Catanzaro;CZ
+CAL;Cosenza;CS
+CAL;Crotone;KR
+CAL;Reggio Calabria;RC
+ CAL;Vibo Valentia;VV
+CAM;Avellino;AV
+CAM;Benevento;BN
+CAM;Caserta;CE
+CAM;Napoli;NA
+CAM;Salerno;SA
+EMR;Bologna;BO
+EMR;Ferrara;FE
+EMR;Forli Cesena;FC
+EMR;Modena;MO
+EMR;Parma;PR
+EMR;Piacenza;PC
+EMR;Ravenna;RA
+EMR;Reggio Emilia;RE
+EMR;Rimini;RN
+FVG;Gorizia;GO
+FVG;Pordenone;PN
+FVG;Trieste;TS
+FVG;Udine;UD
+LAZ;Frosinone;FR
+LAZ;Latina;LT
+LAZ;Rieti;RI
+LAZ;Roma;RM
+LAZ;Viterbo;VT
+LIG;Genova;GE
+LIG;Imperia;IM
+LIG;La Spezia;SP
+LIG;Savona;SV
+LOM;Bergamo;BG
+LOM;Brescia;BS
+LOM;Como;CO
+LOM;Cremona;CR
+LOM;Lecco;LC
+LOM;Lodi;LO
+LOM;Mantova;MN
+LOM;Milano;MI
+LOM;Monza e della Brianza;MB
+LOM;Pavia;PV
+LOM;Sondrio;SO
+LOM;Varese;VA
+MAR;Ancona;AN
+MAR;Ascoli Piceno;AP
+MAR;Fermo;FM
+MAR;Macerata;MC
+MAR;Pesaro e Urbino;PU
+MOL;Campobasso;CB
+MOL;Isernia;IS
+PIE;Alessandria;AL
+PIE;Asti;AT
+PIE;Biella;BI
+PIE;Cuneo;CN
+PIE;Novara;NO
+PIE;Torino;TO
+PIE;Verbano-Cusio-Ossola;VB
+PIE;Vercelli;VC
+PUG;Bari;BA
+PUG;Barletta-Andria-Trani;BT
+PUG;Brindisi;BR
+PUG;Foggia;FG
+PUG;Lecce;LE
+PUG;Taranto;TA
+SAR;Cagliari;CA
+SAR;Carbonia-Iglesias;CI
+SAR;Medio Campidano;VS
+SAR;Nuoro;NU
+SAR;Ogliastra;OG
+SAR;Olbia-Tempio;OT
+SAR;Oristano;OR
+SAR;Sassari;SS
+SIC;Agrigento;AG
+SIC;Caltanissetta;CL
+SIC;Catania;CT
+SIC;Enna;EN
+SIC;Messina;ME
+SIC;Palermo;PA
+SIC;Ragusa;RG
+SIC;Siracusa;SR
+SIC;Trapani;TP
+TOS;Arezzo;AR
+TOS;Firenze;FI
+TOS;Grosseto;GR
+TOS;Livorno;LI
+TOS;Lucca;LU
+TOS;Massa-Carrara;MS
+TOS;Pisa;PI
+TOS;Pistoia;PT
+TOS;Prato;PO
+TOS;Siena;SI
+TAA;Bolzano;BZ
+TAA;Trento;TN
+UMB;Perugia;PG
+UMB;Terni;TR
+VDA;Aosta;AO
+VEN;Belluno;BL
+VEN;Padova;PD
+VEN;Rovigo;RO
+VEN;Treviso;TV
+VEN;Venezia;VE
+VEN;Verona;VR
+VEN;Vicenza;VI

@@ -1,0 +1,94 @@
+.logo{
+height: 3em;
+padding-top: 0.5em;
+}
+.grid {
+  width: 650px;
+  height: 400px;
+}
+
+.panelHead{
+    height:  4em;
+}
+
+.btnPanelHead{
+    margin-left: 0.5em;
+
+}
+
+     
+.aside {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 1049;
+    overflow: auto;
+    min-width: 320px;
+    background: white;
+}
+.aside:focus {
+    outline: none;
+}
+
+.aside.left {
+    right: auto;
+    left: 0;
+}
+.aside.right {
+    right: 0;
+    left: auto;
+}
+.aside .aside-dialog .aside-header {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    min-height: 16.42857143px;
+    padding: 6px 15px;
+    background: #337ab7;
+    color: white;
+}
+.aside .aside-dialog .aside-header .close {
+    margin-right: -8px;
+    padding: 4px 8px;
+    color: white;
+    font-size: 25px;
+    opacity: .8;
+}
+.aside .aside-dialog .aside-body {
+    position: relative;
+    padding: 15px;
+}
+.aside .aside-dialog .aside-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}
+.aside .aside-dialog .aside-footer .btn + .btn {
+    margin-left: 5px;
+    margin-bottom: 0;
+}
+.aside .aside-dialog .aside-footer .btn-group .btn + .btn {
+    margin-left: -1px;
+}
+.aside .aside-dialog .aside-footer .btn-block + .btn-block {
+    margin-left: 0;
+}
+.aside-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000000;
+}
+.aside-backdrop.fade {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.aside-backdrop.in {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+
+

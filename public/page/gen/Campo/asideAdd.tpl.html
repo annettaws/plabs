@@ -1,0 +1,71 @@
+
+           <div class='aside ' tabindex='-1' role='dialog' >
+     <div class='aside-dialog'>
+    <div class='aside-content' >
+      <div class='aside-header' >
+        <button type='button' class='close' ng-click='$hide()'>&times;</button>
+        <h4 class='aside-title' > Novo Campo </h4>
+      </div>
+        <div class='aside-body' >
+           <label >ID</label>
+              <input type='text' 
+                class='form-control'
+                 ng-model='Campo.ID'
+                  ></input>
+           <label >n</label>
+              <input type='text' 
+                class='form-control'
+                 ng-model='Campo.n'
+                  ></input>
+           <label >nome</label>
+              <input type='text' 
+                class='form-control'
+                 ng-model='Campo.nome'
+                  ></input>
+           <label >tipo</label>
+              <input type='text' 
+                class='form-control'
+                 ng-model='Campo.tipo'
+                  ></input>
+           <label >lunghezzaValori</label>
+              <input type='text' 
+                class='form-control'
+                 ng-model='Campo.lunghezzaValori'
+                  ></input>
+           <label >nullo</label>
+              <input type='text' 
+                class='form-control'
+                 ng-model='Campo.nullo'
+                  ></input>
+           <label >indice</label>
+              <input type='text' 
+                class='form-control'
+                 ng-model='Campo.indice'
+                  ></input>
+           <label >ai</label>
+              <input type='text' 
+                class='form-control'
+                 ng-model='Campo.ai'
+                  ></input>
+                   <label >Tabella</label>
+              <input type='text' 
+                class='form-control'
+                 ng-model='Campo.IdTab'
+                  ></input>
+
+           </div>
+
+
+
+
+      <div class='aside-footer'>
+          <button ng-show='creaOaggirna' class='btn btn-success pull-left' ng-click='salva(Campo)' > salva</button>
+          <button ng-show='!creaOaggirna' class='btn btn-success pull-left' ng-click='aggiorna(Campo)' > agiorna</button>
+          <button type='button'  class='btn btn-default' ng-click='$hide()'>annulla</button>
+             <hr>
+      <button ng-show='!creaOaggirna' class='btn btn-danger pull-left' ng-click='destroy(Campo)' > Cancella</button>
+      </div>
+   
+    </div>
+  </div>
+</div>
